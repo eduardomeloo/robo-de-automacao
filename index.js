@@ -3,8 +3,8 @@ const express = require('express')
 const app = express()
 
 app.get('/test', async (req, res) => {
-  const teste = await searchData()
-  res.send({teste})
+  const data = await searchData()
+  res.send({data})
 })
 
 app.listen(3000, () => {
